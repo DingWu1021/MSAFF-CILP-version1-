@@ -1,0 +1,64 @@
+[2024-10-28 19:39:58] [INFO]: {'enable_float16': True, 'with_test': False, 'fix_BN': False, 'log_iter': 100, 'restore_ckpt_strict': True, 'optimizer_reset': False, 'scheduler_reset': False, 'restore_hint': 0, 'save_iter': 10000, 'save_name': 'MsaffGait6L', 'sync_BN': True, 'total_iter': 100000, 'sampler': {'batch_shuffle': True, 'batch_size': [32, 4], 'frames_num_fixed': 60, 'frames_num_max': 50, 'frames_num_min': 25, 'sample_type': 'fixed_unordered', 'type': 'TripletSampler', 'frames_skip_num': 0, 'plus_smpl': True}, 'transform': [{'type': 'BaseSilTransform'}]}
+[2024-10-28 19:39:58] [INFO]: {'model': 'MsaffGait6L', 'class_num': 3000, 'hidden_dim': 256, 'k': 3, 'set_in_channels_img': 1, 'set_in_channels_ske': 3, 'set_channels': [32, 64, 128], 'part_img': 16, 'part_ske': 17, 'pretrained_clip': 'ViT-B/32', 'text': 'A dynamic and expressive human figure in mid-motion, capturing the intricate details of the head, torso, arms, hands, legs, and feet.'}
+[2024-10-28 19:39:58] [INFO]: {'dataset_name': 'Gait3D-Multimodal', 'dataset_root': {'silhouette_root': '/data/wzx/coda/MSAFF-main/sils-64-44', 'smpl_root': '/data/wzx/coda/MSAFF-main/skes-pkl'}, 'num_workers': 20, 'dataset_partition': '/data/wzx/coda/MSAFF-main/misc/partitions/Gait3D.json', 'remove_no_gallery': False, 'cache': False, 'test_dataset_name': 'Gait3D-64pixel'}
+[2024-10-28 19:39:59] [INFO]: -------- Train Pid List --------
+[2024-10-28 19:39:59] [INFO]: [1234, 1512, ..., 1128]
+[2024-10-28 19:40:00] [INFO]: Load Gait3D-Multimodal-trainset in csv format: 
+[36m+----------+-------+--------+
+| subset   | ids   | seqs   |
+|----------+-------+--------|
+| train    | 3000  | 18940  |
++----------+-------+--------+[0m
+[2024-10-28 19:40:01] [INFO]: {'lr': 0.0001, 'momentum': 0.9, 'solver': 'Adam', 'weight_decay': 0}
+[2024-10-28 19:40:01] [INFO]: {'gamma': 0.1, 'milestones': [40000, 80000], 'scheduler': 'MultiStepLR'}
+[2024-10-28 19:40:02] [INFO]: Parameters Count: 23.67045M
+[2024-10-28 19:40:02] [INFO]: Model Initialization Finished!
+[2024-10-28 19:40:05] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:11] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:18] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:23] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:29] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:34] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:39] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:44] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:50] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:54] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:40:59] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:04] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:09] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:14] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:20] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:25] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:31] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:35] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:41] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:46] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:51] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:41:56] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:01] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:05] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:11] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:16] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:21] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:26] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:32] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:36] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:42] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:47] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:52] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:42:57] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:02] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:07] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:13] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:18] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:24] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:28] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:34] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:38] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:44] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:49] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:55] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:43:59] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:44:05] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:44:10] [INFO]: load model from: ViT-B/32
+[2024-10-28 19:44:15] [INFO]: load model from: ViT-B/32

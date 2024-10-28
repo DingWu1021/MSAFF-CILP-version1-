@@ -1,0 +1,11 @@
+python misc/pretreatment.py --input_path '/data/xhr/Gait3d/2D_Silhouettes' --output_path '/data/wzx/coda/MSAFF-main/sils-64-44' --img_h 64 --img_w 44
+他给的output是sils-64-44-pkl，可以看情况改变
+python misc/pretreatment_ske.py --input_path '/data/xhr/Gait3d/2D_Poses' --output_path '/data/wzx/coda/MSAFF-main/skes-pkl'
+
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 lib/main.py --cfgs ./config/MsaffGait_CasiaB.yaml --phase train
+
+
+
+CUDA_VISIBLE_DEVICES=4,5 python -m torch.distributed.launch --nproc_per_node=2 lib/main.py --cfgs /data/wzx/wzx2/MSAFF-main-clip/config/MsaffGait_Gait3D.yaml --phase train
+
+CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 lib/main.py --cfgs /data/wzx/coda/MSAFF-main/config/MsaffGait_Gait3D.yaml --phase test
